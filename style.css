@@ -285,3 +285,78 @@ dialog::backdrop {
   font-size: 1rem;
   margin-bottom: 2rem;
 }
+/* ...keep your existing CSS unchanged above this line... */
+
+/* ✅ Responsive Fixes */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .add-note-btn,
+  .theme-toggle-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .notes-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .note-title {
+    font-size: 1.1rem;
+  }
+
+  .note-content {
+    font-size: 0.95rem;
+  }
+
+  .note-card {
+    padding: 1rem;
+  }
+
+  .dialog-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .dialog-title {
+    font-size: 1.3rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .cancel-btn,
+  .save-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .empty-state {
+    padding: 2rem 1rem;
+  }
+
+  .empty-state h2 {
+    font-size: 1.2rem;
+  }
+
+  .empty-state p {
+    font-size: 0.95rem;
+  }
+}
